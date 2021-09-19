@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+.contain{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.card{
+    margin-top: 2%;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 150px;
+    height: 50px;
+    margin-left: 80%;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+nav{
+    position: fixed;
+}
+.navbar-nav{
+    margin-right: 10%;
+}
+#more {
+    display: none;
+}
+.navbar .collapse ul li a{
+    color: #4b6584 !important;
+}
+.navbar .collapse ul .active a{
+    color: #1bbc9b !important;
+}
+.navbar .collapse ul li a:hover{
+    color:  #1bbc9b !important;
+}
+/*----------stars--------------*/
+.row{
+    display: flex;
+}
+.star{
+    font-size: 12px;
+    color: #576574;
+    display: inline-block;
+}
+.rating-stars .fa-star,.fa-star-half-alt{
+    color: #f9ca24;
+}
+.title{
+    background: #2ecc71;
+    color: #ffff;
+    width: 200px;
+    font-size: 25px;
+    height: 40px;
+    padding: 5px;
+}
+.title::after{
+    content: '';
+    border-top: 40px solid  #2ecc71;
+    border-right: 40px solid transparent;
+    position: relative;
+    left: 52px;
+    top: 36.5px;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    margin-left: 0;
+    width: 70px;
+}
+.card:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+.overlay .fa-heart{
+    cursor: pointer;
+    color: gray;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay .btn-secondary{
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none;
+    color: gray;
+}
+.page{
+    margin: 0 auto 80px;
+    display: flex;
+    justify-content: center;
+}
+.page span{
+    display: inline-block;
+    border: 1px solid #2ecc71;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page span:hover{
+    background: #2ecc71;
+    color: #ffff;
+}
+.card input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    margin-left: 18%;
+    font-size: 20px;
+    border: 1px solid #ff532b;
+}
+input:focus{
+    outline: none;
+}
+.content-section {
+    margin: 1em;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+#heart1.red {
+    color: red;
+}
+#heart2.red {
+    color: red;
+}
+#heart3.red {
+    color: red;
+}
+#heart4.red {
+    color: red;
+}
+#heart5.red {
+    color: red;
+}
+#heart6.red {
+    color: red;
+}
+#heart7.red {
+    color: red;
+}
+#heart8.red {
+    color: red;
+}
+#heart9.red {
+    color: red;
+}
